@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './assets/logo.svg';
 import './styles/App.css';
+import Header from './components/header/Header';
 
 const App = () => (
-  <div className="App">
-    <div className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h2>Welcome to ReactJS</h2>
+  <div className="container">
+    <Header title="Trending Movies" />
+    <div>
+      <h2>Muhsin.K</h2>
     </div>
   </div>
 );
