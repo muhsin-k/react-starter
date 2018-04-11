@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Movie.css';
 
 function Movie(props) {
   return (
-    <div className="card">
+    <div className="card small">
       <div className="card-image waves-effect waves-block waves-light">
         <img alt="movie-poster" className="activator" src={props.moviePoster} />
       </div>
