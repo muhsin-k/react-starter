@@ -6,7 +6,7 @@ function Header(props) {
     <div>
       <nav>
         <div className="nav-wrapper">
-          <a href="#/home" className="brand-logo">
+          <a href="#/home" className="brand-logo center">
             {props.title}
           </a>
         </div>
@@ -18,7 +18,7 @@ Header.propTypes = {
   title: PropTypes.string,
 };
 Header.defaultProps = {
-  title: 'Movies',
+  title: 'Trending Movies',
 };
 
 export default Header;

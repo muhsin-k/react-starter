@@ -1,12 +1,13 @@
 import React from 'react';
 import './styles/App.css';
 import Header from './components/header/Header';
+import Home from './components/home/Home';
 
 const App = () => (
   <div className="container">
-    <Header title="Trending Movies" />
+    <Header title="Trending Movies in India " />
     <div>
-      <h2>Muhsin.K</h2>
+      <Home />
     </div>
   </div>
 );
