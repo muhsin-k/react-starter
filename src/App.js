@@ -5,7 +5,7 @@ import Home from './components/home/Home';
 
 const App = () => (
   <div className="container">
-    <Header title="Trending Movies in India " />
+    <Header title="Trending Movies in India" />
     <div>
       <Home />
     </div>

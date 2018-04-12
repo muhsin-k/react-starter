@@ -8,6 +8,7 @@ class Home extends Component {
     super(props);
     this.state = {
       movies: [],
+      clicked: false,
     };
   }
 
@@ -21,19 +22,24 @@ class Home extends Component {
       movies,
     });
   }
+
   render() {
     return (
-      <div className="row">
-        {this.state.movies.map(movie => (
-          <div className="col s12 m3 xl3 " key={movie.id}>
-            <Movie
-              movieTitle={movie.title}
-              moviePoster={`${constants.TMDB_IMAGE_URL}${movie.poster_path}`}
-              movieUrl={`${constants.TMDB_URL}${movie.id}`}
-              movieReleaseDate={movie.release_date}
-            />
-          </div>
-        ))}
+      <div>
+        {this.state.clicked}
+        <div className="row " />
+        <div className="row">
+          {this.state.movies.map(movie => (
+            <div className="col s12 m3 xl3 " key={movie.id}>
+              <Movie
+                movieTitle={movie.title}
+                moviePoster={`${constants.TMDB_IMAGE_URL}${movie.poster_path}`}
+                movieUrl={`${constants.TMDB_URL}${movie.id}`}
+                movieReleaseDate={movie.release_date}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

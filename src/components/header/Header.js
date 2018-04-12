@@ -9,6 +9,11 @@ function Header(props) {
           <a href="#/home" className="brand-logo center">
             {props.title}
           </a>
+          <ul id="nav-mobile" className="left hide-on-med-and-down">
+            <a href="#/home" className="waves-effect waves-light btn">
+              TMDB
+            </a>
+          </ul>
         </div>
       </nav>
     </div>

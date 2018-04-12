@@ -1,9 +1,7 @@
 {
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier/react"],
-  "plugins": [
-    "prettier"
-  ],
+  "plugins": ["prettier"],
   "env": {
     "browser": true,
     "node": true,
@@ -12,6 +10,15 @@
   },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": "always",
+        "ObjectPattern": { "multiline": true },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+      }
+    ]
   }
 }

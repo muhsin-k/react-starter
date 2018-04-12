@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Header By Snap should render correctly 1`] = `
+<div>
+  <nav>
+    <div
+      className="nav-wrapper"
+    >
+      <a
+        className="brand-logo center"
+        href="#/home"
+      >
+        Trending Movies in India
+      </a>
+      <ul
+        className="left hide-on-med-and-down"
+        id="nav-mobile"
+      >
+        <a
+          className="waves-effect waves-light btn"
+          href="#/home"
+        >
+          TMDB
+        </a>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
