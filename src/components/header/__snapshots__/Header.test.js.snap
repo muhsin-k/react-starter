@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Header By Snap should render correctly 1`] = `
+exports[`Header should render correctly[Snapshot Way] 1`] = `
 <div>
   <nav>
     <div

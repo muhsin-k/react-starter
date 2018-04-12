@@ -23,7 +23,7 @@ Header.propTypes = {
   title: PropTypes.string,
 };
 Header.defaultProps = {
-  title: 'Trending Movies',
+  title: 'Trending Movies Now',
 };
 
 export default Header;
